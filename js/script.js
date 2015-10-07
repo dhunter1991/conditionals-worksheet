@@ -2,13 +2,16 @@
 // conditionals worksheet
 
 
-var minWeight = 250;
-var currentWeight = prompt("for entry in the contest what is your current wright");
+var gasEfficiency = prompt("enter the gas milage of your vehicle");
+var gaugeReading = prompt("enter the amount of fuel in the car in percentage");
+var carTankCapacity = prompt("enter your cars fuel capacity");
+var amountOfMiles = (carTankCapacity * gasEfficiency * gaugeReading);
 
-if (currentWeight > minWeight) {
 
-    console.log ("you can enter the contest");
+if (amountOfMiles > 200) {
+
+    console.log ("you can continue without stopping");
 }else{
 
-    console.log ("you can not enter the contest at this time");
+    console.log ("you should stop for gas now");
 }
