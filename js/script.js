@@ -2,23 +2,13 @@
 // conditionals worksheet
 
 
-var kidHeight = prompt("enter kids height");
-var minHeight = 48;
-var parentHeight = 45;
-// if the child is old enough, print to the console "you can ride!"
-// if the kid is over 48 inches in height
-if(kidHeight > minHeight) {
-    // code performed if condition is true
+var minWeight = 250;
+var currentWeight = prompt("for entry in the contest what is your current wright");
 
-    console.log("you can ride the coaster!");
+if (currentWeight > minWeight) {
 
-} else if (kidHeight > parentHeight){
+    console.log ("you can enter the contest");
+}else{
 
-    // code performed if false
-    console.log("you can ride but only with a parent present!");
-
-}else {
-    console.log("sorry, you've got some growing to do first!");
-
-
+    console.log ("you can not enter the contest at this time");
 }
