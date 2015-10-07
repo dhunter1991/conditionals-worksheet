@@ -2,23 +2,17 @@
 // conditionals worksheet
 
 
-var userName = prompt("please create a username for this account");
-var password = prompt("now create a password");
+var timeOfMovie = prompt("what is the time of the movie");
+var age = prompt("enter your age");
 
-var newUser = prompt ("enter username");
-var newPassword = prompt("enter password");
+if (timeOfMovie < 5 ^ timeOfMovie > 3) {
+    console.log ("the ticket price is 7.00");
 
-if (userName && password  == newUser && newPassword) {
-    console.log ("welcome " + userName, + "!");
-}else if ( userName != newUser) {
-    console.log ("user name not found. Try again.");
-} if (password != newPassword){
-    console.log ("password does not match our records");
-
+}else if (age < 10 ^ age > 55) {
+    console.log ("the ticket price is 7.00");
+}else {
+    console.log ("the ticket price is 12.00");
 }
-
-
-
 
 
 
