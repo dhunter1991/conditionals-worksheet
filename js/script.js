@@ -2,16 +2,24 @@
 // conditionals worksheet
 
 
-var gasEfficiency = prompt("enter the gas milage of your vehicle");
-var gaugeReading = prompt("enter the amount of fuel in the car in percentage");
-var carTankCapacity = prompt("enter your cars fuel capacity");
-var amountOfMiles = (carTankCapacity * gasEfficiency * gaugeReading);
+var userName = prompt("please create a username for this account");
+var password = prompt("now create a password");
 
+var newUser = prompt ("enter username");
+var newPassword = prompt("enter password");
 
-if (amountOfMiles > 200) {
+if (userName && password  == newUser && newPassword) {
+    console.log ("welcome " + userName, + "!");
+}else if ( userName != newUser) {
+    console.log ("user name not found. Try again.");
+} if (password != newPassword){
+    console.log ("password does not match our records");
 
-    console.log ("you can continue without stopping");
-}else{
-
-    console.log ("you should stop for gas now");
 }
+
+
+
+
+
+
+
